@@ -99,6 +99,7 @@ img {
 .site-nav {
   display: flex;
   margin-left: 93px;
+  margin-top: 32px;
 }
 
 .site-nav > .item + .item {
@@ -124,6 +125,16 @@ img {
 .adr-nav .link:focus,
 .link.current {
   color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  display: block;
+  margin-top: 28px;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .adr-nav {
