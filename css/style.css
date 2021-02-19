@@ -629,10 +629,13 @@ img {
 
 .close {
   position: absolute;
-  top: 0;
-  right: 0;
-
-  margin: 0;
-  padding: 20px;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
   border: none;
+  background-image: url(../images/close.svg);
+  background-color: var(--white-color);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
