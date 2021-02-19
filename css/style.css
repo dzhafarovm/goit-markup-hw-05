@@ -117,6 +117,8 @@ img {
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -157,6 +159,8 @@ img {
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-adr {
@@ -370,6 +374,9 @@ img {
 .team-box {
   background-color: var(--button-bg-color);
   fill: var(--clients-networks-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-box:hover,
@@ -402,6 +409,9 @@ img {
   border: 1px solid var(--clients-networks-color);
   border-radius: 4px;
   fill: var(--clients-networks-color);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-box:hover,
@@ -439,6 +449,8 @@ img {
 
 .address .link {
   color: var(--address-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adr-link {
@@ -473,6 +485,8 @@ img {
 .connect-box {
   background-color: var(--footlink-bg-color);
   fill: var(--white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .connect-box:hover,
@@ -508,6 +522,10 @@ img {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -529,6 +547,8 @@ img {
   /* flex-basis: calc(100% / 3 - var(--card-set-gap)); */
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-thumb {
@@ -544,6 +564,8 @@ img {
   height: 294px;
   background-color: var(--accent-color);
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-paragraph {
@@ -561,6 +583,8 @@ img {
   line-height: 1.55;
 
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-thumb:hover::before,
@@ -607,7 +631,7 @@ img {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .backdrop.is-hidden {
