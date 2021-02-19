@@ -99,7 +99,6 @@ img {
 .site-nav {
   display: flex;
   margin-left: 93px;
-  margin-top: 32px;
 }
 
 .site-nav > .item + .item {
@@ -111,6 +110,7 @@ img {
 } */
 
 .site-nav .link {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -128,9 +128,10 @@ img {
 }
 
 .current::after {
+  position: absolute;
+  bottom: 0;
   content: '';
   display: block;
-  margin-top: 28px;
   height: 4px;
   width: 100%;
   background-color: var(--accent-color);
@@ -171,13 +172,14 @@ img {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
+
   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
     url(../images/hero.jpg);
   background-color: var(--secondary-bg-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-align: center;
 }
 
 .hero-section .title {
@@ -230,13 +232,8 @@ img {
   align-items: center;
   width: 270px;
   height: 120px;
-  background-color: var(--button-bg-color);
   margin-bottom: 30px;
-}
-
-.can-icon {
-  width: 70px;
-  height: 70px;
+  background-color: var(--button-bg-color);
 }
 
 .can-section .title {
@@ -601,4 +598,41 @@ img {
 .card-set .item:hover,
 .card-set .item:focus {
   box-shadow: var(--card-shadow);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: var(--white-color);
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin: 0;
+  padding: 20px;
+  border: none;
 }
