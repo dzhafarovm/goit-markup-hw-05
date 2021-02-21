@@ -384,6 +384,7 @@ img {
 .team-box:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
+  outline: none;
 }
 
 /* Секция "Постоянные клиенты" */
@@ -419,6 +420,7 @@ img {
 .client-box:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
+  outline: none;
 }
 
 /* Подвал */
@@ -493,6 +495,7 @@ img {
 .connect-box:hover,
 .connect-box:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 
 /* Страница "Портфолио" */
@@ -534,6 +537,7 @@ img {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: var(--btn-shadow);
+  outline: none;
 }
 
 .card-set {
