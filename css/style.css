@@ -246,6 +246,7 @@ img {
 
   font-weight: 700;
   line-height: 1.15;
+  text-transform: uppercase;
 }
 
 .can-section .paragraph {
@@ -372,7 +373,7 @@ img {
 }
 
 .team-box {
-  background-color: var(--button-bg-color);
+  background-color: var(--white-color);
   fill: var(--clients-networks-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
